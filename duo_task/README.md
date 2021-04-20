@@ -61,3 +61,8 @@ docker-compose up -d
 ```
 docker-compose ps
 ```
+
+4. Stop containers
+```
+docker-compose down
+```
