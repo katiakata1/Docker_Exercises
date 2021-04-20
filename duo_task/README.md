@@ -57,3 +57,7 @@ docker-compose --version
 ```
 docker-compose up -d
 ```
+3. To check all containers:
+```
+docker-compose ps
+```
