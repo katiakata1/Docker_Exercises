@@ -10,17 +10,17 @@ The `nginx.conf` file can be used to configure an NGINX container to run as a re
 
 ## Use docker run to spin up two containers
 </br>
-1. Create network </br>
+ 1. Create network 
 
 ```
 docker network create my-network
 ```
-2. Build image from Dockerfile </br>
+2. Build image from Dockerfile
 
 ```
 docker build -t flask-app .
 ```
-3. Run the container + attach network to it </br>
+3. Run the container + attach network to it
 
 ```
 sudo docker run -d --network my-network --name flask-app flask-app
@@ -31,7 +31,7 @@ sudo docker run -d --network my-network --name flask-app flask-app
 sudo docker run -d --network my-network --mount type=bind,source=$(pwd)/nginx.conf,target=/etc/nginx/nginx.conf -p 80:80 --name nginx nginx:alpine
 ```
 
-5. Go to localhost:<port> or use: </br>
+5. Go to localhost:<port> or use:
 ```
 curl localhost:80
 ```
