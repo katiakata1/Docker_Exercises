@@ -48,3 +48,7 @@ curl localhost
 ```
 docker image prune -a
 ```
+## Spin up containers using docker-compose:
+```
+docker-compose up -d
+```
