@@ -43,3 +43,8 @@ docker run -d --network my-network --mount type=bind,source=$(pwd)/nginx/nginx.c
 ```
 curl localhost
 ```
+
+## To remove all images:
+```
+docker image prune -a
+```
