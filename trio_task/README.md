@@ -48,6 +48,10 @@ curl localhost
 ```
 docker image prune -a
 ```
+## To stop all containers:
+```
+docker-compose down -rmi all
+```
 ## Spin up containers using docker-compose:
 ```
 docker-compose up -d
